@@ -1,3 +1,0 @@
-C:/Proyectos Visual Studio/Bases de Datos/cpp-database-handler-example-main/CMakeFiles/DatabaseExample.dir
-C:/Proyectos Visual Studio/Bases de Datos/cpp-database-handler-example-main/CMakeFiles/edit_cache.dir
-C:/Proyectos Visual Studio/Bases de Datos/cpp-database-handler-example-main/CMakeFiles/rebuild_cache.dir

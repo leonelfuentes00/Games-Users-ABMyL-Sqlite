@@ -1,3 +1,0 @@
-D:\Todo\Coding\cmake-3.29.3-windows-x86_64\bin\cmake.exe -E rm -f CMakeFiles\DatabaseExample.dir/objects.a
-C:\TDM-GCC-64\bin\ar.exe qc CMakeFiles\DatabaseExample.dir/objects.a @CMakeFiles\DatabaseExample.dir\objects1.rsp
-C:\TDM-GCC-64\bin\g++.exe -Wl,--whole-archive CMakeFiles\DatabaseExample.dir/objects.a -Wl,--no-whole-archive -o DatabaseExample.exe -Wl,--out-implib,libDatabaseExample.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\DatabaseExample.dir\linkLibs.rsp
