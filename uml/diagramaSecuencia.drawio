@@ -1,0 +1,232 @@
+<mxfile host="65bd71144e">
+    <diagram id="FdnBaUvpF8twY8q8mjOQ" name="Página-1">
+        <mxGraphModel dx="1652" dy="1036" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="130" width="20" height="790" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="2">
+                    <mxGeometry x="5" y="90" width="10" height="680" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="runApp" style="html=1;verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;startFill=0;" edge="1" parent="1" source="3" target="5">
+                    <mxGeometry x="-0.004" relative="1" as="geometry">
+                        <mxPoint x="50" y="230" as="sourcePoint"/>
+                        <mxPoint x="170" y="230" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="70" y="240"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="Main" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="120" width="100" height="800" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="5">
+                    <mxGeometry x="45" y="100" width="10" height="600" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Handlers" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="120" width="100" height="800" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="8">
+                    <mxGeometry x="45" y="390" width="10" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="addParameter(3, age)" style="html=1;verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;startFill=0;" edge="1" parent="8">
+                    <mxGeometry x="-0.004" relative="1" as="geometry">
+                        <mxPoint x="45.5" y="580" as="sourcePoint"/>
+                        <mxPoint x="425" y="580" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="135.5" y="580"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="SqliteDatabaseHandler" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="120" width="140" height="800" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="12">
+                    <mxGeometry x="65" y="100" width="10" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="sqlite3_open(dbPath)" style="html=1;verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;startFill=0;entryX=0.5;entryY=0.041;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="12" target="21">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="75" y="330" as="sourcePoint"/>
+                        <mxPoint x="330" y="330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="12">
+                    <mxGeometry x="65" y="410" width="10" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="12">
+                    <mxGeometry x="65" y="465" width="10" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="12">
+                    <mxGeometry x="65" y="520" width="10" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="12">
+                    <mxGeometry x="65" y="570" width="10" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="12">
+                    <mxGeometry x="65" y="620" width="10" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="sqlite3_addParameter" style="html=1;verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;startFill=0;" edge="1" parent="12" target="20">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="75" y="550" as="sourcePoint"/>
+                        <mxPoint x="339.5" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" value="sqlite3_addParameter" style="html=1;verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;startFill=0;" edge="1" parent="12" target="20">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="75" y="600" as="sourcePoint"/>
+                        <mxPoint x="340" y="600" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" value="sqlite3_step(stmt)" style="html=1;verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;startFill=0;" edge="1" parent="12">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="75" y="650" as="sourcePoint"/>
+                        <mxPoint x="339.5" y="650" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="IniReader" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="810" y="120" width="100" height="800" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="16">
+                    <mxGeometry x="45" y="120" width="10" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="return dbPath" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;fontSize=11;" edge="1" parent="16" target="12">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="45" y="280" as="sourcePoint"/>
+                        <mxPoint x="-80" y="270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="readFile()" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;fontSize=11;" edge="1" parent="16">
+                    <mxGeometry x="-1" relative="1" as="geometry">
+                        <mxPoint x="55" y="160" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="85" y="160"/>
+                        </Array>
+                        <mxPoint x="55" y="180" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="selecSection(&quot;SQLITE&quot;)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;fontSize=11;" edge="1" parent="16">
+                    <mxGeometry x="-1" relative="1" as="geometry">
+                        <mxPoint x="55" y="200" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="85" y="200"/>
+                        </Array>
+                        <mxPoint x="55" y="220" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" value="getValue(&quot;path&quot;)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;fontSize=11;" edge="1" parent="16">
+                    <mxGeometry x="-1" relative="1" as="geometry">
+                        <mxPoint x="55" y="240" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="85" y="240"/>
+                        </Array>
+                        <mxPoint x="55" y="260" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="sqlite3" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+                    <mxGeometry x="950" y="120" width="100" height="800" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="20">
+                    <mxGeometry x="45" y="310" width="10" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="setConffile(configuration.ini)" style="html=1;verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;startFill=0;" edge="1" parent="1" target="12">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="175" y="250" as="sourcePoint"/>
+                        <mxPoint x="293.83000000000004" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="open(configuration.ini)" style="html=1;verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;startFill=0;exitX=1.121;exitY=0.19;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="16" source="13">
+                    <mxGeometry x="0.0075" relative="1" as="geometry">
+                        <mxPoint x="740" y="270" as="sourcePoint"/>
+                        <mxPoint x="835" y="270" as="targetPoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;fontSize=11;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="995.5" y="500" as="sourcePoint"/>
+                        <mxPoint x="180" y="500" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="addIser(username, email, age)" style="html=1;verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;startFill=0;" edge="1" parent="1" target="9">
+                    <mxGeometry x="-0.004" relative="1" as="geometry">
+                        <mxPoint x="175.5" y="530" as="sourcePoint"/>
+                        <mxPoint x="300" y="530" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="200.5" y="530"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="prepareQuery(INSERT INTO Users (username, email, age) )" style="html=1;verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;startFill=0;" edge="1" parent="1" target="12">
+                    <mxGeometry x="-0.004" relative="1" as="geometry">
+                        <mxPoint x="350" y="550" as="sourcePoint"/>
+                        <mxPoint x="549.5" y="550" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="440" y="550"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="42" value="addParameter(1, username)" style="html=1;verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;startFill=0;" edge="1" parent="1">
+                    <mxGeometry x="-0.004" relative="1" as="geometry">
+                        <mxPoint x="350" y="600" as="sourcePoint"/>
+                        <mxPoint x="729.5" y="600" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="440" y="600"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="addParameter(2, email)" style="html=1;verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;startFill=0;" edge="1" parent="1">
+                    <mxGeometry x="-0.004" relative="1" as="geometry">
+                        <mxPoint x="350" y="650" as="sourcePoint"/>
+                        <mxPoint x="729.5" y="650" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="440" y="650"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" value="execute()" style="html=1;verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;startFill=0;" edge="1" parent="1">
+                    <mxGeometry x="-0.004" relative="1" as="geometry">
+                        <mxPoint x="350" y="750" as="sourcePoint"/>
+                        <mxPoint x="729.5" y="750" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="440" y="750"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="sqlite3_addParameter" style="html=1;verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;startFill=0;exitX=1.221;exitY=0.63;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="38" target="20">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="740" y="610" as="sourcePoint"/>
+                        <mxPoint x="980" y="610" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="sqlite3_prepare" style="html=1;verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;startFill=0;exitX=1.221;exitY=0.775;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="36" target="20">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="760" y="560" as="sourcePoint"/>
+                        <mxPoint x="999.5" y="560" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="50" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;fontSize=11;" edge="1" parent="1" target="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1000" y="790" as="sourcePoint"/>
+                        <mxPoint x="210" y="770" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="290" y="790"/>
+                            <mxPoint x="250" y="790"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

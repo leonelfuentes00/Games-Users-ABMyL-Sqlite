@@ -1,0 +1,88 @@
+<mxfile host="65bd71144e">
+    <diagram id="AzbwUirtjdyj88CIMtDG" name="Página-1">
+        <mxGraphModel dx="1335" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="DatabaseHandler" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="180" width="160" height="144" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="3">
+                    <mxGeometry y="26" width="160" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="- setConffile(...)&#10;- prepareQuery(...)&#10;- addParameter(..)&#10;- execute()&#10;fetch()&#10;fetchAll()&#10;getErrorStatus()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3">
+                    <mxGeometry y="34" width="160" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Handlers" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="400" width="210" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="+ dbHandler: SqliteDatabaseHandler&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="7">
+                    <mxGeometry y="26" width="210" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="7">
+                    <mxGeometry y="52" width="210" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="- addUser(...)&#10;- removeUser(...)&#10;- updateUser(...)&#10;- listUsers(...)&#10;- addGame(...)&#10;- removeGame(...)&#10;- updateGame(...)&#10;- listGames(...)&#10;- associateUserWithGame(...)&#10;- listAssociationByUser(...)&#10;- listAssociations(...)&#10;- findAssociationByUser(...)&#10;- findAssociationByGame(...)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="7">
+                    <mxGeometry y="60" width="210" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="IniReader" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="285" y="174" width="160" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="+ dataSection: Str&#10;+ BufferData: Str" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="11">
+                    <mxGeometry y="26" width="160" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="11">
+                    <mxGeometry y="70" width="160" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="+ open(...)&#10;+ selectSection(...)&#10;+ getValue(...)&#10;+ close()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="11">
+                    <mxGeometry y="78" width="160" height="72" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="SqliteDatabaseHandler" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="110" y="400" width="160" height="178" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="+ pDB: sqlite3&#10;+ stmt: sqlite3_stmt&#10;+ errorStatus: bool&#10;+ row: Row&#10;+ table: Table&#10;+ columnName: str&#10;+ columnValue: str&#10;+ columnCount: int&#10;+ iniReader: IniReader" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="19">
+                    <mxGeometry y="26" width="160" height="144" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="19">
+                    <mxGeometry y="170" width="160" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" style="endArrow=block;startArrow=none;endFill=0;startFill=0;html=1;entryX=0.261;entryY=1.011;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="6">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="125" y="399" as="sourcePoint"/>
+                        <mxPoint x="120" y="330" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="" style="endArrow=none;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;entryX=0.22;entryY=1.05;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0;exitDx=0;exitDy=0;endFill=0;" edge="1" parent="1" source="19" target="14">
+                    <mxGeometry x="-1" y="56" relative="1" as="geometry">
+                        <mxPoint x="240" y="399" as="sourcePoint"/>
+                        <mxPoint x="400" y="399" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="270" y="360"/>
+                            <mxPoint x="320" y="360"/>
+                        </Array>
+                        <mxPoint x="-40" y="17" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="28" value="«interface»&lt;br&gt;&lt;b&gt;Sqlite3&lt;/b&gt;" style="html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-70" y="430" width="110" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="endArrow=none;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endFill=0;" edge="1" parent="1" target="28">
+                    <mxGeometry x="-1" y="3" relative="1" as="geometry">
+                        <mxPoint x="110" y="455" as="sourcePoint"/>
+                        <mxPoint x="320" y="470" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="" style="endArrow=none;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;entryX=0.998;entryY=0.225;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.012;exitY=-0.002;exitDx=0;exitDy=0;exitPerimeter=0;endFill=0;" edge="1" parent="1" source="10" target="20">
+                    <mxGeometry x="-1" y="-232" relative="1" as="geometry">
+                        <mxPoint x="300" y="530" as="sourcePoint"/>
+                        <mxPoint x="370" y="460" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="270" y="460"/>
+                        </Array>
+                        <mxPoint x="-202" y="230" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
